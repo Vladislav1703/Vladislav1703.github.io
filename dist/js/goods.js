@@ -132,7 +132,7 @@ let goodsRolls = {
         "name" : "Унаги диру",
         "cost" : 280,
         "description" : "8 шт. | 960 г. | 800 Kkal",
-        "image" : "url(/img/rolls_2.png)"
+        "image" : "url(img/rolls_2.png)"
     },
     "10203" : {
         "name" : "Филадельфия",
