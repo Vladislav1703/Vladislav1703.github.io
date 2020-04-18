@@ -1,0 +1,22 @@
+@import 'libs/normalize';
+@import 'libs/fonts';
+@import 'libs/slick';
+
+* {
+    font-family: 'Open Sans', 'Lemon Teusday', 'Roboto', sans-serif ;
+}
+
+@import 'base/grid';
+@import 'base/variable';
+@import 'base/button';
+@import 'block/header';
+@import 'block/firstline';
+@import 'block/nav';
+@import 'block/slider';
+@import 'block/order';
+@import 'block/rolls';
+@import 'block/pizza';
+@import 'block/tabs';
+@import 'block/about';
+@import 'block/footer';
+@import 'base/media';

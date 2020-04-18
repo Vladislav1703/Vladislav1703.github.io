@@ -1,0 +1,65 @@
+.firstline {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas: "logo adress call";
+}
+
+
+.number {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    a {
+        text-decoration: none;
+        color: #010101;
+    }
+    span {
+        font-size: 10px;
+    }
+}
+
+.mail {
+    a {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #000000;
+        text-decoration: none;
+    }
+}
+
+.callback {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 15px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.adress_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+#callback {
+    grid-area: call;
+}
+
+
+
+#mainLogo {
+    grid-area: logo;
+}
+
+#adress {
+    grid-area: adress;
+}

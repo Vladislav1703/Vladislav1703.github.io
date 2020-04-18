@@ -1,0 +1,56 @@
+.about {
+    display: grid;
+    grid-template-rows: 82px 60px 75px 30px 40px auto auto 170px;
+    grid-template-columns: 805px 89px auto;
+    grid-template-areas: ". . ."
+    "head head head"
+    ". . ."
+    "subhead . ."
+    ". . ."
+    "desc . photo"
+    "descmenu . photo"
+    ". . .";
+    width: 100%;
+    max-width: 1170px;
+}
+
+
+.subheader {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #32505a;
+}
+
+.about_desc, .about_desc_menu {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #4d4d4d;
+}
+
+.about_photo {
+    width: 277px;
+    height: 478px;
+    background: url(../img/about.png) center (center/cover) no-repeat;
+    border-radius: 5px;
+}
+
+#aboutHeader {
+    grid-area: head;
+}
+#subheader {
+    grid-area: subhead;
+}
+
+#aboutDesc {
+    grid-area: desc;
+}
+
+#aboutDescMenu {
+    grid-area: descmenu;
+}
+
+#aboutPhoto {
+    grid-area: photo;
+}

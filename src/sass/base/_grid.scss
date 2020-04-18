@@ -1,0 +1,51 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr minmax(max-content, 1170px) 1fr;
+    grid-template-rows: 150px 35vw repeat(3, 705px) 40px 739px minmax(806px, auto) minmax(auto, 413px) ;
+    grid-template-areas: 
+    ". . ."
+    "slider slider slider"
+    ". sets ."
+    ". rolls ."
+    ". pizza ."
+    ". . ."
+    ". tabs ."
+    ". about ."
+    "footer footer footer" ;
+    grid-gap: 0px;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+#mainHeader {
+    grid-area: header;
+}
+
+#mainSlider {
+    grid-area: slider;
+    position: relative;
+}
+
+#rolls_sets {
+    grid-area: sets;
+}
+
+#pizza {
+    grid-area: pizza;
+}
+
+#rolls {
+    grid-area: rolls;
+}
+
+#aboutUs {
+    grid-area: about;
+}
+
+#mainFooter {
+    grid-area: footer;
+}
+
+#mainTabs {
+    grid-area: tabs;
+}

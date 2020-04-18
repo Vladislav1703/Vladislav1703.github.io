@@ -1,0 +1,38 @@
+header {
+    position: fixed;
+    top: 0;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: auto 570px 600px auto;
+    grid-template-rows: 100px 50px;
+    grid-template-areas: 
+    ". first first ."
+    ". nav nav .";
+    align-items: center;
+    z-index: 3;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.headerMobile {
+    height: 0;
+    visibility: hidden;
+    display: none;
+}
+
+#waste {
+    grid-area: waste;
+}
+
+#navigation {
+    grid-area: nav;
+}
+
+#firstline {
+    grid-area: first;
+}
+
+
+#headerMobile {
+    grid-area: headm;
+}

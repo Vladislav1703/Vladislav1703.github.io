@@ -1,0 +1,181 @@
+.slider {
+    position: relative;
+    height: 35vw;
+    .slide {
+        background: url(../img/slide_1.png) center center/cover no-repeat;
+        height: 35vw;
+        position: relative;
+        &_label {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            background-color: rgba(220, 32, 36, 1);
+            border-radius: 50%;
+            top: 68px;
+            left: 52%;
+            font-family: 'Open Sans';
+            font-size: 18.4px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &_text {
+            font-family: 'Lemon Teusday';
+            font-size: 110px;
+            line-height: 100px;
+            font-weight: 400;
+            color: #84c604;
+            padding-left: 19vw;
+            padding-top: 4vw;
+        }
+        &_description {
+            font-size: 26.4px;
+            line-height: 1.2;
+            font-weight: 400;
+            font-style: italic;
+            color: #ffffff;
+            padding-left: 19vw;
+            padding-top: 5vw;
+        }
+    }
+    &_dots { // точки внизу
+        left: 50%;
+        transform: translateX(-50%);
+        background: transparent;
+        bottom: 3vw;
+        position: absolute;
+        display: flex;
+        list-style: none;
+        li {
+            margin-right: 25px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border: none;  
+            background-color: transparent;
+            button {
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                border: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+                background-color: transparent;
+                font-size: 0;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+        .slick-active {
+            button {
+                background-color: $green;
+            }
+        }
+        .slick-slide { //слайдер
+            display: flex;
+        }
+    }
+}
+
+
+
+.slick-promo { // стрелки переключения верхнего слайдера
+    z-index: 2;
+    position: absolute;
+    height: 53px;
+    width: 53px;
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: #000000;
+    border: none;
+    display: flex;
+    top: 15vw;
+    padding: 0;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    &:focus {
+        outline: 2px blue solid;
+    }
+    span {
+        height: 12px;
+        width: 3px;
+        background-color: #ffffff;
+    }
+}
+
+.slick-next { // стрелка вперёд
+    right: 8vw;
+    span:first-child {
+        transform: skewX(45deg) translateY(-6px) translateX(8px);
+        height: 13px;
+    }
+    span {
+        transform: skewX(-45deg) translateY(7px) translateX(6px);
+    }
+
+}
+
+.slick-prev { //стрелка назад
+    left: 8vw;
+    span:first-child {
+        transform: skewX(-45deg) translateY(-7px) translateX(-7px);
+        height: 13px;
+    }
+    span {
+        transform: skewX(45deg) translateY(6px) translateX(-9px);
+    }
+}
+
+
+.arrow-order { // стрелки карусели заказа
+    position: absolute;
+    z-index: 2;
+    bottom: -1vw;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 27px;
+    height: 20px;
+    padding-top: 10px;
+    background-color: transparent;
+    span {
+        display: block;
+        width: 1px;
+        height: 9px;
+        background-color: #808080;
+    }
+    span:first-child {
+        border-top: 1px;
+        height: 1px;
+        width: 100%;
+    }
+}
+
+.prev-order {
+    left: 35%; 
+    span:nth-child(2) {
+        transform: skewX(-45deg) translateY(-10px) translateX(-5.5px);
+    }
+    span:nth-child(3) {
+        transform: skewX(45deg) translateY(-9.1px) translateX(13.5px);
+    }
+}
+
+.next-order {
+    right: 35%;
+    span:nth-child(2) {
+        transform: skewX(45deg) translateY(-10px) translateX(31.5px);
+    }
+    span:nth-child(3) {
+        transform: skewX(-45deg) translateY(-9.1px) translateX(12.4px);
+    }
+}
+
+.slick-disabled { // неактивная стрелка
+    opacity: 0.5;
+}
+
+

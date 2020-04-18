@@ -1,0 +1,147 @@
+.mainOrder {
+    display: grid;
+    grid-template-rows: 80px 55px 31px 499px;
+    grid-template-columns: 1fr minmax(auto, 1140px) 1fr;
+    grid-template-areas: ". . ."
+    ". head ."
+    ". . ."
+    ". orders .";
+}
+.orderHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        font-family: 'Lemon Teusday';
+        font-size: 60px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #32505a;
+        margin: 0 38px;
+    }
+}
+
+.orders {
+    display: grid;
+    grid-auto-flow: row;
+    width: 100vw;
+    max-width: 1170px;
+    box-sizing: border-box;
+    &_item {
+        width: 263px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        border-radius: 15px;
+        box-shadow: 0 0 5px rgba(0,0,0, .1);
+        padding-bottom: 40px;
+        background-color: #ffffff;
+        margin-left: 1vw;
+        &_header {
+            margin: 0;
+            margin-top: 30px;
+        }
+        &_subheader {
+            margin: 0;
+            margin-top: 22px;
+        }
+        &_price {
+            margin: 0;
+            margin-top: 28px;
+            display: flex;
+            justify-content: space-between;
+            width: 190px;
+            .price {
+                font-size: 22px;
+                font-weight: 700;
+                color: #000000;
+                letter-spacing: -1px;
+                margin-left: 2px;
+                position: relative;
+                span {
+                    position: absolute;
+                    font-size: 15px;
+                    left: 58px;
+                    letter-spacing: -1px;
+                }
+            }
+        }
+        &_counter {
+            display: flex;
+            width: 63px;
+            span {
+                display: flex;
+                font-family: 'Open Sans';
+                font-size: 14px;
+                line-height: 28px;
+                font-weight: 400;
+                color: #000000;
+                margin: 0 10px;
+            }
+        }
+        &_label{
+            position: absolute;
+            top: 22px;
+            right: 10px;
+        }
+        &_new {
+            position: absolute;
+            left: 0;
+        }
+        &_image {
+            width: 100%;
+            height: 228px;
+            background: center center no-repeat;
+            border-radius: 8px 8px 0 0;
+        }
+    }
+    
+    .slider_dots { // точки слайдера
+        bottom: -1vw;
+        li {
+            margin-right: 22px;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            border: none;  
+            background-color: transparent;
+            button {
+                height: 8px;
+                width: 8px;
+                border-radius: 50%;
+                border: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+                background-color: gray;
+                font-size: 0;
+                outline: none;
+                cursor: pointer;
+                padding: 0;
+            }
+        }
+        .slick-active { // точка активной вкладки
+            button {
+                background-color: $green;
+            }
+        }
+    }
+
+    .slick-prev-orders {
+        bottom: -1vw;
+    }
+    
+}
+
+
+
+#orderHeader {
+    grid-area: head;
+}
+
+#setsRow {
+    grid-area: orders;
+}
+
+sup {
+    font-size: 65%;
+    margin-left: 5px;
+}

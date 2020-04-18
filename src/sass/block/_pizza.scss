@@ -1,0 +1,18 @@
+.pizzaOrder {
+    display: grid;
+    grid-template-rows: 80px 55px 31px 499px;
+    grid-template-columns: 1fr minmax(auto, 1140px) 1fr;
+    grid-template-areas: ". . ."
+    ". head ."
+    ". . ."
+    ". orders .";
+}
+
+#orderHeader {
+    grid-area: head;
+}
+
+
+#pizzasRow {
+    grid-area: orders;
+}

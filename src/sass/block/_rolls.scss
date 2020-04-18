@@ -1,0 +1,25 @@
+.rollsOrder {
+    display: grid;
+    grid-template-rows: 80px 55px 31px 499px;
+    grid-template-columns: 1fr minmax(auto, 1140px) 1fr;
+    grid-template-areas: ". . ."
+    ". head ."
+    ". . ."
+    ". orders .";
+    .orders_item{
+        &_image {
+            max-width: 100%;
+        }
+    }
+}
+
+
+
+#orderHeader {
+    grid-area: head;
+}
+
+
+#rollsRow {
+    grid-area: orders;
+}

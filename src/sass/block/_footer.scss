@@ -1,0 +1,77 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 1170px) 1fr;
+    grid-template-rows: 72px 1fr 50px 27px 55px;
+    grid-template-areas: ". . ."
+    ". footnav ."
+    ". . ."
+    ". link .";
+    background-color: #1a2d34;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.footerNavigation {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100vw;
+    max-width: 1170px;
+    &_item {
+        .white { //белые ссылки
+            font-size: 14px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 400;
+
+        }
+        a {  //синие ссылки
+            font-size: 10px;
+            line-height: 24px;
+            font-weight: 400;
+            text-decoration: none;
+            color: #6b96a5;
+        }
+    }
+}
+
+.footerLink {
+    display: grid;
+    grid-template-columns: 1fr 4fr 205px;
+    grid-row: 1fr;
+    align-items: center;    
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #6b96a5;
+    width: 100vw;
+    max-width: 1170px;
+    .personal_data {
+        font-size: 10px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #6b96a5;
+    }
+}
+
+.social_network {
+    a {
+        opacity: 0.4;
+    }
+    a:nth-child(2) {
+        margin: 0 15px;
+    }
+    
+}
+
+#footerNavigation {
+    grid-area: footnav;
+}
+
+#footerLink {
+    grid-area: link;
+}
+
+#footerMobile {
+    grid-area: footerm;
+    display: none;
+}
