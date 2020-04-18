@@ -132,7 +132,7 @@ let goodsRolls = {
         "name" : "Унаги диру",
         "cost" : 280,
         "description" : "8 шт. | 960 г. | 800 Kkal",
-        "image" : "url(/img/rolls_2.png)"
+        "image" : "url(img/rolls_2.png)"
     },
     "10203" : {
         "name" : "Филадельфия",
@@ -249,120 +249,120 @@ let goodsPizzas = {
         "name" : "Баварская",
         "cost" : 480,
         "description" : "33 см | 680 г. | 1350 Kkal",
-        "image" : "url(../img/pizza_1.png)"
+        "image" : "url(img/pizza_1.png)"
     },
     "10302" : {
         "name" : "Вегетарианская",
         "cost" : 380,
         "description" : "33 см | 755 г. | 1800 Kkal",
-        "image" : "url(../img/pizza_2.png)"
+        "image" : "url(img/pizza_2.png)"
     },
     "10303" : {
         "name" : "Пепперони",
         "cost" : 450,
         "description" : "33 см | 615 г. | 1400 Kkal",
-        "image" : "url(../img/pizza_3.png)"
+        "image" : "url(img/pizza_3.png)"
     },
     "10304" : {
         "name" : "Классическая",
         "cost" : 390,
         "description" : "33 см | 590 г. | 1490 Kkal",
-        "image" : "url(../img/pizza_4.png)"
+        "image" : "url(img/pizza_4.png)"
     },
     "10305" : {
         "name" : "Баварская",
         "cost" : 480,
         "description" : "33 см | 680 г. | 1350 Kkal",
-        "image" : "url(../img/pizza_1.png)"
+        "image" : "url(img/pizza_1.png)"
     },
     "10306" : {
         "name" : "Вегетарианская",
         "cost" : 380,
         "description" : "33 см | 755 г. | 1800 Kkal",
-        "image" : "url(../img/pizza_2.png)"
+        "image" : "url(img/pizza_2.png)"
     },
     "10307" : {
         "name" : "Пепперони",
         "cost" : 450,
         "description" : "33 см | 615 г. | 1400 Kkal",
-        "image" : "url(../img/pizza_3.png)"
+        "image" : "url(img/pizza_3.png)"
     },
     "10308" : {
         "name" : "Классическая",
         "cost" : 390,
         "description" : "33 см | 590 г. | 1490 Kkal",
-        "image" : "url(../img/pizza_4.png)"
+        "image" : "url(img/pizza_4.png)"
     },
     "10309" : {
         "name" : "Баварская",
         "cost" : 480,
         "description" : "33 см | 680 г. | 1350 Kkal",
-        "image" : "url(../img/pizza_1.png)"
+        "image" : "url(img/pizza_1.png)"
     },
     "10310" : {
         "name" : "Вегетарианская",
         "cost" : 380,
         "description" : "33 см | 755 г. | 1800 Kkal",
-        "image" : "url(../img/pizza_2.png)"
+        "image" : "url(img/pizza_2.png)"
     },
     "10311" : {
         "name" : "Пепперони",
         "cost" : 450,
         "description" : "33 см | 615 г. | 1400 Kkal",
-        "image" : "url(../img/pizza_3.png)"
+        "image" : "url(img/pizza_3.png)"
     },
     "10312" : {
         "name" : "Классическая",
         "cost" : 390,
         "description" : "33 см | 590 г. | 1490 Kkal",
-        "image" : "url(../img/pizza_4.png)"
+        "image" : "url(img/pizza_4.png)"
     },
     "10313" : {
         "name" : "Баварская",
         "cost" : 480,
         "description" : "33 см | 680 г. | 1350 Kkal",
-        "image" : "url(../img/pizza_1.png)"
+        "image" : "url(img/pizza_1.png)"
     },
     "10314" : {
         "name" : "Вегетарианская",
         "cost" : 380,
         "description" : "33 см | 755 г. | 1800 Kkal",
-        "image" : "url(../img/pizza_2.png)"
+        "image" : "url(img/pizza_2.png)"
     },
     "10315" : {
         "name" : "Пепперони",
         "cost" : 450,
         "description" : "33 см | 615 г. | 1400 Kkal",
-        "image" : "url(../img/pizza_3.png)"
+        "image" : "url(img/pizza_3.png)"
     },
     "10316" : {
         "name" : "Классическая",
         "cost" : 390,
         "description" : "33 см | 590 г. | 1490 Kkal",
-        "image" : "url(../img/pizza_4.png)"
+        "image" : "url(img/pizza_4.png)"
     },
     "10317" : {
         "name" : "Баварская",
         "cost" : 480,
         "description" : "33 см | 680 г. | 1350 Kkal",
-        "image" : "url(../img/pizza_1.png)"
+        "image" : "url(img/pizza_1.png)"
     },
     "10318" : {
         "name" : "Вегетарианская",
         "cost" : 380,
         "description" : "33 см | 755 г. | 1800 Kkal",
-        "image" : "url(../img/pizza_2.png)"
+        "image" : "url(img/pizza_2.png)"
     },
     "10319" : {
         "name" : "Пепперони",
         "cost" : 450,
         "description" : "33 см | 615 г. | 1400 Kkal",
-        "image" : "url(../img/pizza_3.png)"
+        "image" : "url(img/pizza_3.png)"
     },
     "10320" : {
         "name" : "Классическая",
         "cost" : 390,
         "description" : "33 см | 590 г. | 1490 Kkal",
-        "image" : "url(../img/pizza_4.png)"
+        "image" : "url(img/pizza_4.png)"
     },
 };
