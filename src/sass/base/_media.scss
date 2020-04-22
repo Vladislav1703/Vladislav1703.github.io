@@ -20,17 +20,17 @@
 @media (max-width: 1200px) {
 	body {
 		display: grid;
-		grid-template-columns: 1fr minmax(max-content, 1170px) 1fr;
+		grid-template-columns: 1fr 95% 1fr;
 		grid-template-rows: 150px 35vw repeat(3, 705px) 40px 739px minmax(806px, auto) minmax(auto, 413px) ;
 		grid-template-areas: 
 		". . ."
 		"slider slider slider"
-		"sets sets sets"
-		"rolls rolls rolls"
-		"pizza pizza pizza"
+		". sets ."
+		". rolls ."
+		". pizza ."
 		". . ."
-		"tabs tabs tabs"
-		"about about about"
+		". tabs ."
+		". about ."
 		"footer footer footer" ;
 		grid-gap: 0px;
 		margin: 0;
@@ -47,7 +47,11 @@
 		grid-template-areas:
 		"first first"
 		"nav nav";
+		padding: 0 10px;
 		.callback { // уменьшение шрифтов и элементов
+			justify-content: space-between;
+			padding-left: 60px;
+			padding-right: 0;
 			.number {
 				a {
 					font-size: 14px;
@@ -77,11 +81,11 @@
 	}
 
 	.orders {     
-		padding-left: 6vw;
+		width: 100%;
 	} 
 	.about {
 		display: grid;
-		grid-template-rows: 60px 40px 30px 40px auto auto 170px;
+		grid-template-rows: 60px 40px 30px 40px auto auto 70px;
 		grid-template-columns: 1fr auto 40px 1fr;
 		grid-template-areas:
 		"head head head head"
@@ -96,16 +100,10 @@
 		.subheader {
 			text-align: center;
 		}
-		&_desc {
-			padding-left: 20px;
-		}
-		&_photo {
-			padding-right: 20px;
-		}
 	}
 	footer {
-		display: none;
-		grid-template-columns: 20px minmax(auto, 1140px) 20px;
+		display: grid;
+		grid-template-columns: 1fr 95% 1fr;
 		grid-template-rows: 72px 1fr 50px 27px 55px;
 		grid-template-areas: ". . ."
 		"footnav footnav footnav"
@@ -134,7 +132,7 @@
 	body {
 		display: grid;
 		grid-template-columns: 1fr 720px 1fr;
-		grid-template-rows: 88px 420px 15px repeat(3, 635px) 65px 694px 958px auto;
+		grid-template-rows: 88px 420px 15px repeat(3, 635px) 65px 694px minmax(958px,auto) auto;
 		grid-template-areas: 
 		". headm ."
 		"slider slider slider"
@@ -192,11 +190,16 @@
 		.logo {
 			display: flex;
 			justify-content: center;
-			img {
-				width: 151px;
-				height: 55px;
-				padding-left: 3px;
-				padding-top: 1px;
+			&_big {
+				img {
+					width: 151px;
+					height: 55px;
+					padding-left: 3px;
+					padding-top: 1px;
+				}	
+			}
+			&_mini {
+				display: none;
 			}
 		}
 		.cabinet {
@@ -220,43 +223,56 @@
 	}
 	.mobileNavigation {
 		transition: 1s ease-in;
+		width: 78vw;
 		left: 0;
 		position: absolute;
 		display: flex;
 		flex-direction: column;
-		width: 380px;
 		background: #ffffff;
-		padding-left: 70px; 
 		height: 600px;
 		z-index: 1;
 		box-sizing: border-box;
 		box-shadow: 0 0 15px 0px rgba(0,0,0,0.4);
+		padding-bottom: 25px;
+		height: auto;
 		.menu {
-			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: 70px;
 		}
 		.topNavigation_item {
 			display: block;
-			width: 164px;
 			margin-bottom: 40px;
+			font-size: 22px;
 		}
 
 		.callback {
-			display: block;
+			display: flex;
+			flex-direction: column;
 			button {
 				margin-top: 25px;
+			}
+			.number {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 			}
 		}
 
 		.adress_wrapper {
-			margin-top: 30px;
-			display: block;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
 			.mail{
 				margin-top: 20px;
 			}
 		}
 	}
 	.menu_off {
-		left: -400px;
+		left: -82vw;
 	}
 	.slider {
 		height: 100%;
@@ -315,6 +331,7 @@
 			//margin-right: 42px;
 		}
 		.slider_dots {
+			left: 50%;
 			bottom: 28px;
 			margin: 0;
 		}
@@ -322,10 +339,10 @@
 			bottom: 11px;
 		}
 		.next-order {
-			right: 28vw;
+			right: 28%;
 		}
 		.prev-order {
-			left: 28vw;
+			left: 28%;
 		}
 		&_wrapper {
 			width: 250px;
@@ -415,7 +432,7 @@
 
 	.about {
 		display: grid;
-		grid-template-rows: 22px 48px 50px 21px 70px 494px 253px;
+		grid-template-rows: 22px 48px 50px 21px 70px 274px 253px;
 		grid-template-columns: auto 30px 220px;
 		grid-template-areas:
 		". . ."
@@ -441,6 +458,7 @@
 			margin-top: 24px;
 			padding: 0;
 			line-height: 20px;
+			text-align: justify;
 			span {
 				display: none;
 			}
@@ -554,7 +572,7 @@
 	body {
 		display: grid;
 		grid-template-columns: 1fr 90% 1fr;
-		grid-template-rows: 88px 420px 15px repeat(3, 635px) 65px 694px 958px auto;
+		grid-template-rows: 88px 420px 15px repeat(3, 635px) 65px 694px max-content auto;
 		grid-template-areas: 
 		". headm ."
 		"slider slider slider"
@@ -570,13 +588,176 @@
 		margin: 0;
 		background-color: #fafafa;
 	}
+	
 	.orders {
 		&_wrapper {
-			width: 60vw;
+			width: 51vw;
 		}
+	}
 
+	.about {
+		grid-template-rows: 22px 48px 50px 21px 70px min-content max-content;
+		padding-bottom: 20px;
+		&_desc {
+			text-align: justify;
+		}
 	}
 	footer {
 		grid-template-columns: 1fr 90% 1fr;
+	}
+
+}
+
+@media (max-width: 575px)  {
+	body {
+		grid-template-rows: 57px 224px 15px repeat(3, 635px) auto max-content auto;
+		grid-template-areas: 
+		". headm ."
+		"slider slider slider"
+		". . ."
+		". sets ."
+		". rolls ."
+		". pizza ."
+		". tabs ."
+		". about ."
+		"footerm footerm footerm" ;
+	}
+	.headerMobile {
+		height: 100%;
+		grid-template-columns: 65px 1fr 65px;
+		.button_menu {
+			margin-top: 21px;
+		}
+		.logo {
+			width: 100%; 
+			&_big {
+				width: 0;
+				display: none;
+			}
+			&_mini {
+				display: flex;
+			}
+		}
+		.cabinet {
+			.topNavigation_item {
+				padding: 0;
+				margin-top: 17px;
+			}
+			.topNavigation_item {
+				&:last-child {
+					margin-left: 0;
+					.pieces {
+						top: -2px;
+						left: 17px;
+					}
+				}
+			}
+		}
+	}
+	.mobileNavigation {
+		.menu {
+			margin-top: 45px;
+		}
+		.topNavigation_item {
+			font-size: 20px;
+		}
+	}
+	.slider {
+		.slide {
+			height: 224px;
+			&_label {
+				width: 67px;
+				height: 67px;
+				left: 70%;
+				top: 85px;
+				span {
+					font-size: 14px;
+				}
+			}
+			&_text {
+				font-size: 49px;
+				margin-top: 17px;
+				margin-left: 15px;
+				line-height: 1.2;
+			}
+			&_description {
+				margin-top: 24px;
+				font-size: 12px;
+			}
+			.button_slider {
+				display: none;
+			}
+		}
+		&_dots {
+			bottom: -36px;
+		}		
+	}
+	.orders {
+		&_wrapper {
+			width: 90vw;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+	}
+	.orders_item {
+		margin-right: 0;
+	}
+	.orderHeader {
+		img  {
+			width: 74px;
+			height: 27px;
+		}
+		h3 {
+			font-size: 44px;
+			margin: 0 auto;
+		}
+	}
+	.rollsOrder, .pizzaOrder {
+		.orderHeader {
+			h3 {
+				font-size: 44px;
+				margin: 0 auto;
+			}
+		}
+	}
+	.about {
+		grid-template-columns: 1fr;
+		grid-template-rows: 20px auto 20px auto 20px auto;
+		grid-template-areas: 
+		"."
+		"head"
+		"."
+		"subhead"
+		"."
+		"desc"
+		"descmenu";
+		.orderHeader {
+			img {
+				display: none;
+			}
+		}
+		.subheader {
+			font-size: 20px;
+		}
+		&_photo {
+			display: none;
+		}
+		&_desc_menu {
+			display: none;
+			text-align: justify;
+		}
+	}
+	.footerLink {
+		flex-direction: column-reverse;
+		:nth-child() {
+			margin-top: 10px;
+		}
+	}
+	.button {
+		&_showText {
+			display: block;
+		} 
 	}
 }

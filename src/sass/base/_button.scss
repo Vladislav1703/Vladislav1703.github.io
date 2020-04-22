@@ -95,10 +95,22 @@
         &_active {
             color: #fd4f10;
         }
+        &:hover {
+            cursor: pointer;
+            background-color: transparent;
+            border-color: transparent;
+            color: #fd4f10;
+        }
     }
     &_escape {
         position: absolute;
         right: 30px;
         top: 50px;
+    }
+    &_showText {
+        display: none;
+        width: 100%;
+        border-color: #fd4f10;
+        color: #fd4f10;
     }
 }

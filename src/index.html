@@ -14,7 +14,8 @@
             <span></span>
         </button>
         <div class="logo">
-            <img src="icons/logo.png" alt="logo">
+            <img class="logo_big" src="icons/logo.png" alt="logo">
+            <img class="logo_mini" src="icons/logo_mini.png" alt="">
         </div>
         <div class="cabinet">
             <div class="topNavigation_item">
@@ -1974,407 +1975,447 @@
 
         <div class="orders tabcontent tabcontent_notactive" id="saleGoods">
             <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
                         </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                     </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                 </div>
             </div>
             <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"><img src="icons/label_hot.png" alt=""></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"><img src="icons/label_hot.png" alt=""></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
                         </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                     </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                 </div>
             </div>
             <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
                         </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                     </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                 </div>
             </div>
             <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
                         </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                     </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
-                </div>
-            </div>
-
-            <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
-                        </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
-                    </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
-                </div>
-            </div>
-            <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"><img src="icons/label_hot.png" alt=""></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
-                        </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
-                    </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
-                </div>
-            </div>
-            <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
-                        </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
-                    </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
-                </div>
-            </div>
-            <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
-                        </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
-                    </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                 </div>
             </div>
 
             <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
                         </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                     </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                 </div>
             </div>
             <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"><img src="icons/label_hot.png" alt=""></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"><img src="icons/label_hot.png" alt=""></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
                         </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                     </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                 </div>
             </div>
             <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
                         </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                     </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                 </div>
             </div>
             <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
                         </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                     </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
-                </div>
-            </div>
-
-            <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
-                        </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
-                    </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
-                </div>
-            </div>
-            <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"><img src="icons/label_hot.png" alt=""></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
-                        </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
-                    </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
-                </div>
-            </div>
-            <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
-                        </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
-                    </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
-                </div>
-            </div>
-            <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
-                        </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
-                    </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                 </div>
             </div>
 
             <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
                         </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                     </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                 </div>
             </div>
             <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"><img src="icons/label_hot.png" alt=""></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"><img src="icons/label_hot.png" alt=""></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
                         </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                     </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                 </div>
             </div>
             <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
                         </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                     </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                 </div>
             </div>
             <div class="orders_slider">
-                <div class="orders_item">
-                    <div class="orders_item_image"></div>
-                    <div class="orders_item_label"></div> 
-                    <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
-                    <h5 class="orders_item_header"></h5>
-                    <h6 class="orders_item_subheader"></h6>
-                    <div class="orders_item_price">
-                        <div class="price">
-                            0 <span> руб.</span> 
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
                         </div>
-                        <div class="orders_item_counter">
-                            <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
-                            <span>1</span>
-                            <button onclick="plusItem()" class="button button_add">+</button>
-                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
                     </div>
-                    <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
+                </div>
+            </div>
+
+            <div class="orders_slider">
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
+                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="orders_slider">
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"><img src="icons/label_hot.png" alt=""></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
+                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="orders_slider">
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
+                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="orders_slider">
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
+                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="orders_slider">
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
+                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="orders_slider">
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"><img src="icons/label_hot.png" alt=""></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
+                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="orders_slider">
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
+                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="orders_slider">
+                <div class="orders_wrapper">
+                    <div class="orders_item">
+                        <div class="orders_item_image"></div>
+                        <div class="orders_item_label"></div> 
+                        <div class="orders_item_new"><img src="icons/sale.png" alt=""></div>
+                        <h5 class="orders_item_header"></h5>
+                        <h6 class="orders_item_subheader"></h6>
+                        <div class="orders_item_price">
+                            <div class="price">
+                                0 <span> руб.</span> 
+                            </div>
+                            <div class="orders_item_counter">
+                                <button onclick="minusItem()" class="button button_add button_add-minus">-</button>
+                                <span>1</span>
+                                <button onclick="plusItem()" class="button button_add">+</button>
+                            </div>
+                        </div>
+                        <button onclick="buyItem()" class="button button_order"> <span>В корзину</span> <img src="icons/cart_order.png" alt="в корзину"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2389,16 +2430,18 @@
         <div class="subheader" id="subheader">Заказ и доставка роллов, пиццы и WOK(Вок) в городе Курск</div>
         <div class="about_desc" id="aboutDesc">
             Суши МИЮШИ открылись в октябре 2012г. и уже завоевали успех у тех, кто ценит японскую кухню и качественное приготовление блюд.
-<br><br>
-С 2013 года мы осуществляем не только доставку на дом, теперь для вас открыт наш уютный небольшой зал. Придя сюда, вы сможете плотно пообедать, насладиться прекрасными напитками, посидеть с друзьями или обзавестись новыми знакомствами.
-<br><br>
-Открывая зал, Мы преследовали цель предоставить своим посетителям максимум удобства и комфорта, поэтому, придя сюда в первый раз, вы почувствуете себя как рыба в воде, окунувшись в домашнюю и теплую обстановку!
-<br><br>
-Особое внимание мы уделяем организации доставки суши и других блюд, которая осуществляется только по г. Курске. Четкая и слаженная работа курьеров позволяет максимально сократить время от приготовления блюда до его попадания на стол заказчику. Как правило, оно составляет от 20 до 60 минут в зависимости от местонахождения клиента. Операторы службы доставки всегда осведомлены обо всех изменениях времени доставки и предупреждают клиентов заранее, а при возможных серьезных задержках в связи с дорожной ситуацией предложат Вам альтернативу. Мы беремся только за ту работу, которую можем выполнить в срок.
-<br><br>
-
+            <br><br>
+            С 2013 года мы осуществляем не только доставку на дом, теперь для вас открыт наш уютный небольшой зал. Придя сюда, вы сможете плотно пообедать, насладиться прекрасными напитками, посидеть с друзьями или обзавестись новыми знакомствами.
+            <br><br>
+            Открывая зал, Мы преследовали цель предоставить своим посетителям максимум удобства и комфорта, поэтому, придя сюда в первый раз, вы почувствуете себя как рыба в воде, окунувшись в домашнюю и теплую обстановку!
+            <br><br>
+            <button onclick="showText()" class="button button_showText">
+                Показать ещё
+            </button>
         </div>
         <div class="about_desc_menu" id="aboutDescMenu">
+            Особое внимание мы уделяем организации доставки суши и других блюд, которая осуществляется только по г. Курске. Четкая и слаженная работа курьеров позволяет максимально сократить время от приготовления блюда до его попадания на стол заказчику. Как правило, оно составляет от 20 до 60 минут в зависимости от местонахождения клиента. Операторы службы доставки всегда осведомлены обо всех изменениях времени доставки и предупреждают клиентов заранее, а при возможных серьезных задержках в связи с дорожной ситуацией предложат Вам альтернативу. Мы беремся только за ту работу, которую можем выполнить в срок.
+            <br><br>
             В меню суши МИЮШИ представлено все многообразие японской кухни. Классические суши, и роллы приготовлены в соответствии с традиционными рецептами. Для любителей нежных и тающих во рту блюд предлагаются роллы с мясом краба, а также для больших любителей копченого угря потрясающий ролл Дракон. Для желающих пробовать что-то новое и необычное – острые ГУНКАНЫ и новинка нашего меню - ИНАРИ, широкий выбор горячих роллов. Большим компаниям будет удобно заказать суши и роллы, объединенные в сеты, включающие сразу несколько видов каждого из этих блюд. Кроме того, меню суши МИЮШИ не ограничено только японской кухней, здесь всегда можно заказать горячие и холодные блюда ЛАПША или РИС WOK с различными мясными и рыбными наполнителями, салаты, горячие закуски и различные напитки.
             <span>
                 <br><br>

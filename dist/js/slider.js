@@ -39,16 +39,22 @@ $(document).ready(function(){
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                variableWidth: false,
+                variableWidth: true,
+                arrows: false,
               }
             },
             {
-              breakpoint: 500,
+              breakpoint: 576,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                arrows: false,
+                variableWidth: true,
+                centerMode: true,
+                dots: false,
               }
-            }
+            },
+            
 
           ]
     });
